@@ -1,0 +1,35 @@
+:css 
+  .section {height:600px;}
+
+
+#nav.pageScrollerNav.standardNav.top.dark
+  %a{:href=>"#"} Link 1
+  %a{:href=>"#"}Link 2
+  %a{:href=>"#"}Link 3
+  %a{:href=>"#"}Link 4
+  %a{:href=>"#"}Link 5
+  
+#wrapper
+  #main
+    .section
+      %h1="Section1"
+    .section
+      %h1="Section2"
+    .section
+      %h1="Section3"
+    .section
+      %h1="Section4"
+    .section
+      %h1="Section5"
+             
+
+
+:javascript
+    $(document).ready(function(){
+    
+      // initiate page scroller plugin
+      $('body').pageScroller({
+        navigation: '#nav'
+      });
+          
+    });
