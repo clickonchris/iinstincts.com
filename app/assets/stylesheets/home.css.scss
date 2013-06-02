@@ -1,3 +1,115 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  margin:0px;
+  font-family: 'Ruluko', sans-serif;
+  color:#2a2a2a;
+}
+
+img {
+  border:none;
+}
+
+.fixed {
+  width:960px;
+  margin:0px auto;
+  position:relative;
+}
+
+.section {
+  height:800px;
+}
+
+.clear {
+  clear:both;
+}
+
+#nav {
+  background: #2a2a2a;
+  color:#fff;
+  padding: 7px 0px;
+  position:fixed;
+  top:0px;
+  width:100%;
+  z-index:10;
+  a {
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    margin-right:30px;
+  }
+  a:hover {
+    color:#74CFE7;
+  }
+}
+
+#home {
+   background: url(/assets/banner.jpg) 0 28px no-repeat;
+    
+  
+  .banner {
+    height:255px;
+    padding-top:33px;
+    
+    h1 {
+      font-size:60px;
+      margin:0px;
+    }
+    h1.company_name_line2 {
+        position:relative;
+        left:51px;
+    }
+    
+    h2 {
+      color:#fff;
+      position:absolute;
+      top:183px;
+      left:44px;
+      font-size:30px;
+    }
+    .logo {
+      float:left;
+      margin-right:20px;
+    }
+  }
+
+  img.me {
+    float:right;
+    margin-top:15px;
+    margin-left:15px;
+  }
+  
+
+}
+
+#services,#values,#contact {
+  padding-top:20px;
+}
+
+#services {
+  background: url('/assets/skyline.jpg') no-repeat;
+  background-size:100% auto;
+  
+  .javaruby,.mobile,.business {
+    background: rgba(255,255,255,0.8);
+    padding:20px;
+  }
+  
+  .javaruby {
+    margin-bottom: 40px;
+  }
+  
+  .mobile {
+    width: 420px;
+    float:left;
+    margin-right:40px;
+  }
+  
+  .business {
+    width:420px;
+    float:left;
+  }
+  
+}

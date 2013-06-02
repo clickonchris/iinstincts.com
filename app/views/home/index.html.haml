@@ -1,26 +1,60 @@
-:css 
-  .section {height:600px;}
+
+%link{:href=>"http://fonts.googleapis.com/css?family=Ruluko",:rel=>'stylesheet', :type=>'text/css'}
 
 
 #nav.pageScrollerNav.standardNav.top.dark
-  %a{:href=>"#"} Link 1
-  %a{:href=>"#"}Link 2
-  %a{:href=>"#"}Link 3
-  %a{:href=>"#"}Link 4
-  %a{:href=>"#"}Link 5
+  .fixed
+    %a{:href=>"#"}Home
+    %a{:href=>"#"}Services
+    %a{:href=>"#"}Values
+    %a{:href=>"#"}Contact
   
 #wrapper
   #main
-    .section
-      %h1="Section1"
-    .section
-      %h1="Section2"
-    .section
-      %h1="Section3"
-    .section
-      %h1="Section4"
-    .section
-      %h1="Section5"
+    #home.section
+      .fixed
+        .banner
+          =image_tag('innovation_instincts_logo.png', :alt=>'innovation instincts logo', :class=>'logo');
+          %h1.company_name="innovation"
+          %h1.company_name_line2="instincts, inc"
+          %h2.tagline // technology solutions for humans
+        
+        -# this is the gravatar image for chris@clickonchris.com with size 160x160 (last param)
+        %img.me{:src=>'http://www.gravatar.com/avatar/619274d3d5f871ff7225f435fb5fc926?s=160', :alt=>'christopher g johnson'}
+        %p Hi, I’m Christopher G Johnson.  I love helping business of all sizes to build, launch, and grow their products.
+        %p I’ve been building software for 10 years – most of that has been spent consulting.  I’ve worked with tiny startups and giant corporate enterprises.  Along the way I earned an MBA and have launched products of my own.
+        %p Full Stack Product Development is what I call my skill set.  In engineering terms, the “full stack” starts with a database and ends with a user interface.  In product development, engineering is just part of the equation; The product developer’s stack also includes customer development through marketing and sales, using analytics to track your progress.
+        %p 
+          If you want help building your product from someone who understands why you’re building it, then 
+          %a.goTo{:href=>"#section-contact", :onclick=>"pageScroller.goTo(4);"} Let’s Talk.
+        
+        %h2 Companies I've worked with:
+        .clear
+        
+        =image_tag('companies.gif')
+    #services.section
+      .fixed
+        %h1="Services"
+        
+        .javaruby
+          =image_tag('java.png')
+          =image_tag('rails.png')
+        .mobile
+          =image_tag('mobile.png')
+        .business
+          =image_tag('handshake.png')
+        
+        
+      
+      
+    #values.section
+      .fixed
+        %h1="Values"
+      
+      
+    #contact.section
+      .fixed
+        %h1="Contact"
              
 
 
@@ -29,7 +63,9 @@
     
       // initiate page scroller plugin
       $('body').pageScroller({
-        navigation: '#nav'
+        navigation: '#nav',
+        keyboardControl: true,
+        deepLink: true
       });
           
     });
