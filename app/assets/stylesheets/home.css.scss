@@ -99,17 +99,38 @@ img {
   
   .javaruby {
     margin-bottom: 40px;
+    .java {
+      position:relative;
+      left:8px;
+    }
+
   }
   
   .mobile {
     width: 420px;
     float:left;
     margin-right:40px;
+    .phone {
+      position:relative;
+      margin-left:10px;
+    }
   }
   
   .business {
     width:420px;
     float:left;
+    .handshake {
+      position:relative;
+      left:-5px;
+    }
+  }
+  
+  .images {
+    float:left;
+  }
+  
+  ul.services {
+    margin-left:65px;
   }
   
 }
