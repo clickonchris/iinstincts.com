@@ -15,7 +15,11 @@ IinstinctsCom::Application.routes.draw do
   
   root :to=>"home#index"
   
+  match 'home/contact' => 'home#contact'
+  
   resources :home
+  
+  
 
   # Sample resource route with options:
   #   resources :products do
