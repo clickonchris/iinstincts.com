@@ -8,6 +8,6 @@ class EMailer < ActionMailer::Base
   
   def contact_mail(params)
     @params = params
-    mail(:to=>"chris@iinstincts.com", :subject=>@params[:subject])
+    mail(:to=>"chris@iinstincts.com", :from=>@params[:email], :subject=>@params[:subject])
   end
 end
