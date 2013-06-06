@@ -1,3 +1,42 @@
+/* 
 @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)  { /* STYLES GO HERE */}
+and (min-width : 768px) and (max-width : 1024px)  { 
+*/
+@media only screen and (max-width : 1024px)  { 
+
+  .fixed {
+    width:100%;
+  }  
+  
+
+  
+  #home,#services,#values,#contact {
+    padding:20px 10px 0px 10px;
+  }
+  
+  #home {
+    height:auto;
+    
+    .banner {
+      overflow:hidden;
+      h1 {
+        font-size:50px;
+      }
+    }
+    
+    .co_nuance,.co_bcbs,.co_ftd,.co_geneca,.co_officemax {
+      position:static;
+      top:auto;
+      left:auto;
+    }
+  }
+  
+  #services {
+    background-size:auto;
+    .javaruby, .mobile, .business {
+      width:90%;
+      margin:10px;
+    }
+
+  }
+}
