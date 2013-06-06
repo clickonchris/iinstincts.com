@@ -28,7 +28,16 @@
         %h2 Companies I've worked with:
         .clear
         
-        =image_tag('companies.gif')
+        .companies
+          -#= image_tag('companies.gif', :style=>"position:absolute;")
+          
+          =link_to(image_tag('nuance.png'), "http://nuance.com", :target=>"_blank", :class=>"co_nuance")
+          =link_to(image_tag('bcbs.png'), "http://bcbs.com", :target=>"_blank", :class=>"co_bcbs")
+          =link_to(image_tag('ftd.png'), "http://ftd.com", :target=>"_blank", :class=>"co_ftd")
+          =link_to(image_tag('geneca.png'), "http://geneca.com", :target=>"_blank", :class=>"co_geneca")
+          =link_to(image_tag('officemax.png'), "http://officemax.com", :target=>"_blank", :class=>"co_officemax")
+          .clear
+        
     #services.section
       .fixed
         %h1="Services"
@@ -59,6 +68,7 @@
             %li Team Development, Mentoring
             %li Agile Adoption
             %li SEO Best Practices
+            %li Process Improvement, Continuous Integration
         
         
       
@@ -89,9 +99,9 @@
         %h1="Contact"
         
         %p
-          Let’s Talk!  I promise to respond promptly to all legitimate inquiries.
+          Let’s talk!  I promise to respond promptly to all legitimate inquiries.
         %p
-          If you are inquiring about my services, the next step will be to have a no-pressure phone consultation.  If I’m not the best person to help your business I can even help point you in the right direction.
+          If you are inquiring about my services the next step will be to have a no-pressure phone consultation.  If I’m not the best person to help your business I can help point you in the right direction.
         
         %form#contact_form
           %p
@@ -112,7 +122,7 @@
             %textarea{:name=>"message"}   
           
           %p
-            %input{:type=>"submit", :value=>"send"}
+            %input{:type=>"submit", :value=>"send", :class=>"fancybutton"}
     
     #footer
       Copyright 2013 Innovation Instincts, Inc   
