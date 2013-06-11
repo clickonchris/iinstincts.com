@@ -31,8 +31,8 @@ class HomeController < ApplicationController
     if !@error_msg.empty?
       render :text=>@error_msg and return
     else
-      # EMailer.thank_you_mail(params).deliver
-      # EMailer.contact_mail(params).deliver
+      EMailer.thank_you_mail(params).deliver
+      EMailer.contact_mail(params).deliver
       
       render :text=>"OK" and return
     end
