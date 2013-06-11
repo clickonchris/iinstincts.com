@@ -17,7 +17,8 @@
           %h2.tagline // technology solutions for humans
         
         -# this is the gravatar image for chris@clickonchris.com with size 160x160 (last param)
-        %img.me{:src=>'http://www.gravatar.com/avatar/619274d3d5f871ff7225f435fb5fc926?s=160', :alt=>'christopher g johnson'}
+        -#%img.me{:src=>'http://www.gravatar.com/avatar/619274d3d5f871ff7225f435fb5fc926?s=160', :alt=>'christopher g johnson'}
+        =image_tag('chris.jpg', :class=>"me", :alt=>"christopher g johnson")
         %p Hi, I’m Christopher G Johnson.  I love helping business of all sizes to build, launch, and grow their products.
         %p I’ve been building software for 10 years – most of that has been spent consulting.  I’ve worked with tiny startups and giant corporate enterprises.  Along the way I earned an MBA and have launched products of my own.
         %p Full Stack Product Development is what I call my skill set.  In engineering terms, the “full stack” starts with a database and ends with a user interface.  In product development, engineering is just part of the equation; The product developer’s stack also includes customer development through marketing and sales, using analytics to track your progress.
@@ -93,7 +94,8 @@
           and 
           %a{:href=>"http://steveblank.com/", :target=>"_blank"}Steve Blank 
           – and they don’t just apply to startups.  We believe that organization that learns the most about it’s market in the shortest amount of time will be the most successful.  The way to increase the rate of organizational learning is to follow a build-measure-learn cycle and quickly iterate over it.
-      
+        .clear &nbsp;
+        
     #contact.section
       .fixed
         %h1="Contact"
