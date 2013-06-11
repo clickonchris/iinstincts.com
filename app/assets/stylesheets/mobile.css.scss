@@ -58,10 +58,15 @@ and (max-width : 568px) {
       h1 {
         font-size: 32px;
       }
+      h1.company_name_line_2 {
+        width:275px;
+        left: 19px;
+      }
       h2 {
-        font-size:19px;
+        font-size:17px;
         top:104px;
-        left:18px;
+        left:12px;
+
       }
     }
     
@@ -92,6 +97,10 @@ and (max-width : 568px) {
   
   #values {
     height:auto;
+  }
+
+  #contact input {
+    width:280px;
   }
   
   #contact textarea {
