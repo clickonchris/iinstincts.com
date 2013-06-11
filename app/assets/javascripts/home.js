@@ -1,5 +1,13 @@
 $(function() {
 	
+	 // initiate page scroller plugin
+      $('body').pageScroller({
+        navigation: '#nav',
+        keyboardControl: true,
+        deepLink: true
+      });
+      
+	
 	$('#contact_form').on('submit', function(e) {
 		e.preventDefault();
 		
