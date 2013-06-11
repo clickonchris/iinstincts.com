@@ -36,7 +36,7 @@ and (max-width : 568px) {
       border-radius:5px;
       border: 1px solid rgb(155, 155, 155);
     }
-    button.menu:active {
+    button.menu.active {
       background-color: rgb(165,165,165);
     }
   }

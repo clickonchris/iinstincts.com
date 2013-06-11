@@ -1,10 +1,17 @@
 $(function() {
 	
+	var menuExpanded = false;
+	
 	 // initiate page scroller plugin
       $('body').pageScroller({
         navigation: '#nav',
         keyboardControl: true,
-        deepLink: true
+        deepLink: true,
+        animationBefore: function() {
+        	if (menuExpanded) {
+        		collapseMenu();
+        	}
+        }
       });
       
 	
@@ -31,20 +38,30 @@ $(function() {
 			}
 		});
 	});
-	
-	var menuExpanded = false;
-	
-	$('button.menu').on('touchstart', function(e) {
+
+	$('.menu').on('touchstart', function(e) {
+		$('.menu').addClass('active');
 		if (!menuExpanded) {
-			$('#nav a').css('display','block');
-			$('#nav').css('height', 'auto');
-			menuExpanded = true;
+			expandMenu();
 		} else {
-			$('#nav a').css('display', 'none');
-			$('#nav').removeAttr('style');
-			menuExpanded = false;
+			collapseMenu();
 		}
 
 	});
+	$('.menu').on('touchend', function(e) {
+		$('.menu').removeClass('active');
+	});
+	
+	var expandMenu = function() {
+		$('#nav a').css('display','block');
+		$('#nav').css('height', 'auto');
+		menuExpanded = true;
+	};
+	
+	var collapseMenu = function() {
+		$('#nav a').css('display', 'none');
+		$('#nav').removeAttr('style');
+		menuExpanded = false;
+	};
 	
 });
