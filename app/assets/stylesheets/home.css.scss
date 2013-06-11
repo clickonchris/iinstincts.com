@@ -56,6 +56,9 @@ img {
   a:hover {
     color:#74CFE7;
   }
+  button.menu {
+    display:none;
+  }
 }
 
 #home {
@@ -137,6 +140,7 @@ img {
   background-size:100% auto;
   box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.75);
   z-index:3;
+  height:750px;
   
   .javaruby,.mobile,.business {
     background: rgba(255,255,255,0.8);

@@ -31,6 +31,9 @@ and (max-width : 1024px)  {
       top:auto;
       left:auto;
     }
+    button.menu {
+      display:none;
+    }
   }
   
   #services {

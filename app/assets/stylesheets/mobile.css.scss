@@ -9,17 +9,35 @@ and (max-width : 568px) {
    .fixed {
       width:100%;
     }  
+    
+  #home,#services,#values,#contact {
+    padding:20px 10px 0px 10px;
+  }
   
   #nav {
     position:fixed;
     padding:0px;
-    height:30px;
+    height:40px;
     
     a {
       display:none;
       padding:10px;
       border: 1px solid rgb(31,31,31);
       margin:0px;
+    }
+    
+    button.menu {
+      display:inline;
+      margin: 4px;
+      font-size: 25px;
+      background-color: rgb(139, 139, 139);
+      border: none;
+      color: #fff;
+      border-radius:5px;
+      border: 1px solid rgb(155, 155, 155);
+    }
+    button.menu:active {
+      background-color: rgb(165,165,165);
     }
   }
   

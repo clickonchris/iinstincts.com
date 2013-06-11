@@ -11,6 +11,7 @@ $(function() {
 			if (data != "OK") {
 				$('#error').html(data).show();
 				$('.submit').removeAttr('disabled');
+				$('body').animate({scrollTop: $('#error').offset().top -50}, 600);
 			} else {
 				$('#success').html("Your message was sent sucessfully").show();
 				$('#contact_form').hide();
@@ -21,6 +22,21 @@ $(function() {
 				
 			}
 		});
+	});
+	
+	var menuExpanded = false;
+	
+	$('button.menu').on('touchstart', function(e) {
+		if (!menuExpanded) {
+			$('#nav a').css('display','block');
+			$('#nav').css('height', 'auto');
+			menuExpanded = true;
+		} else {
+			$('#nav a').css('display', 'none');
+			$('#nav').removeAttr('style');
+			menuExpanded = false;
+		}
+
 	});
 	
 });
