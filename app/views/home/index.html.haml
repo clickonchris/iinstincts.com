@@ -20,14 +20,14 @@
         -# this is the gravatar image for chris@clickonchris.com with size 160x160 (last param)
         -#%img.me{:src=>'http://www.gravatar.com/avatar/619274d3d5f871ff7225f435fb5fc926?s=160', :alt=>'christopher g johnson'}
         =image_tag('chris.jpg', :class=>"me", :alt=>"christopher g johnson")
-        %p Hi, I’m Christopher G Johnson.  I love helping business of all sizes to build, launch, and grow their products.
-        %p I’ve been building software for 10 years – most of that has been spent consulting.  I’ve worked with tiny startups and giant corporate enterprises.  Along the way I earned an MBA and have launched products of my own.
-        %p Full Stack Product Development is what I call my skill set.  In engineering terms, the “full stack” starts with a database and ends with a user interface.  In product development, engineering is just part of the equation; The product developer’s stack also includes customer development through marketing and sales, using analytics to track your progress.
+        %p Hi, I’m Christopher G Johnson.  I'm passionate about helping business of all sizes to build, launch, and grow their products. That's why I started Innovation Instincts.
+        %p The Innovation Instincts team has been building software for a long time, working with tiny startups and giant corporate enterprises.  Technology is in our blood and delighting users is our main goal.
+        %p Full Stack Product Development is what I call our core copmetency.  In engineering terms, the “full stack” starts with a database and ends with a user interface.  In product development, engineering is just part of the equation; The product developer’s stack also includes customer development through marketing and sales, using analytics to track your progress.
         %p 
           If you want help building your product from someone who understands why you’re building it, then 
           %a.goTo{:href=>"#section-contact", :onclick=>"pageScroller.goTo(4);"} Let’s Talk.
         
-        %h2 Companies I've worked with:
+        %h2 Companies We've Worked With:
         .clear
         
         .companies
@@ -102,9 +102,9 @@
         %h1="Contact"
         
         %p
-          Let’s talk!  I promise to respond promptly to all legitimate inquiries.
+          I promise to respond promptly to all legitimate inquiries.
         %p
-          If you are inquiring about my services the next step will be to have a no-pressure phone consultation.  If I’m not the best person to help your business I can help point you in the right direction.
+          If you are inquiring about our services the next step will be to have a no-pressure phone consultation.  If we're not the best option to help your business we can help point you in the right direction.
         
         #error
         #success
@@ -131,6 +131,12 @@
           
           %p
             %input{:type=>"submit", :value=>"send", :class=>"fancybutton submit"}
+
+          %p
+          %p
+            You can also contact me through 
+            =link_to "LinkedIn", "http://linkedin.com/in/johnsonchristopherg", :target=>"_blank"
+            =link_to image_tag("linkedin.gif"), "http://linkedin.com/in/johnsonchristopherg", :target=>"_blank"
     
     #footer
       Copyright 2013 Innovation Instincts, Inc   
