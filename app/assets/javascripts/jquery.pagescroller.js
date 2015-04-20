@@ -123,6 +123,12 @@ var pageScroller = {};
 				// set click events for page links
 				pageScroller.pageLinks.each(function(index){
 					$(this).bind('click', function(e){
+
+            if ($(this).attr('href').indexOf('http') >= 0) {
+              //follow the link
+              return;
+            }
+
 						e.preventDefault();
 						o.animationBefore();
 						// instantly update active state if not already animating
