@@ -61,6 +61,11 @@ img {
   }
 }
 
+#footer {
+  position:fixed;
+  bottom:0px;
+}
+
 #home {
    background: url(/assets/banner.jpg) 0 28px no-repeat;
    box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.75);
@@ -110,8 +115,8 @@ img {
   }
   .co_bcbs {
     position: absolute;
-    top: 51px;
-    left: 178px;
+    top: 88px;
+    left: 0px;
   }
   .co_ftd {
     position: absolute;
@@ -119,13 +124,19 @@ img {
   }
   .co_geneca {
     position: absolute;
-    top: 61px;
-    left: 524px;
+    top: 90px;
+    left: 315px;
   }
   .co_officemax {
     position: absolute;
   left: 674px;
   top: 16px;
+  }
+
+  .co_accenture {
+    position:absolute;
+    top:88px;
+    left:695px;
   }
   
 
